@@ -202,7 +202,7 @@ $(document).on("keypress", function (e) {
 
   for (var i = 0; i < hashMap.length; i++) {
     if (hashMap[i].logo.toLowerCase() === key) {
-      window.open("hashMap[i].url");
+      window.open(hashMap[i].url);
     }
   }
 });
@@ -226,4 +226,4 @@ $("input").on("keypress", function (e) {
 // </li>`).insertBefore($lastLi);
 // });
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.c8f3f6ee.js.map
+//# sourceMappingURL=main.a763a8c9.js.map
