@@ -68,11 +68,15 @@ window.onbeforeunload = () => {
 $(document).on("keypress", e => {
   //  const key = e.key;此代码可以简写成如下：
   const { key } = e;
+
   for (let i = 0; i < hashMap.length; i++) {
     if (hashMap[i].logo.toLowerCase() === key) {
-      window.open(hashMap[i].url);
+      window.open("hashMap[i].url");
     }
   }
+});
+$("input").on("keypress", e => {
+  e.stopPropagation();
 });
 // 没有记忆功能
 //$(".addButton").on("click", () => {
